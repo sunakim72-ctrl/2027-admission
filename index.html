@@ -80,7 +80,7 @@ button:disabled{opacity:.35;cursor:default}
   </section>
 </div>
 <script>
-const pages=Array.from({length:16},(_,i)=>`pages/page-${String(i+1).padStart(2,'0')}.jpg`);
+const pages=Array.from({length:16},(_,i)=>`page-${String(i+1).padStart(2,'0')}.jpg`);
 const book=document.getElementById('book'),prev=document.getElementById('prev'),next=document.getElementById('next'),counter=document.getElementById('counter'),bar=document.getElementById('bar');
 let index=0,animating=false,swiped=false,sx=0;
 function isMobile(){return window.matchMedia('(max-width:760px)').matches}
